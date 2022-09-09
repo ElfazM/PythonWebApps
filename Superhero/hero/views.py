@@ -6,9 +6,9 @@ class HulkView(TemplateView):
  
     def get_context_data(self, **kwargs):
         return {
-            'title': 'Hulk',
-            'id': 'Bruce Banner',
-            'image': '/static/images/hulk.jpg'
+            'title': 'House of Dragon',
+            'id': 'Rhaenyra Targaryen',
+            'image': '/static/images/HouseOfDragon.jpg'
         }   
 
 
@@ -17,7 +17,7 @@ class IronManView(TemplateView):
 
     def get_context_data(self, **kwargs):
         return {
-            'title': 'IronMan',
-            'id': 'Tony Stark',
-            'image': '/static/images/iron_man.jpg'
+            'title': 'Game of Thrones',
+            'id': 'Daenerys Targaryen',
+            'image': '/static/images/GameOfThrones.jpg'
         }   
