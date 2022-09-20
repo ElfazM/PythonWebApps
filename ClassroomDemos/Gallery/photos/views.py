@@ -7,5 +7,5 @@ class PhotoView(TemplateView):
     def get_context_data(self, **kwargs): # key word argumets 
         name = kwargs['name']             # gets name from url
         image = f'\static\images\{name}'  # string that has url which will output whatever name the user asks from the image file
-        return {'photo' : image}          # communicate with template to inject a variable that will point image ehic  wil have the name.
+        return {'photo' : image}          # communicate with template to inject a variable that will point image which  wil have the name.
 
