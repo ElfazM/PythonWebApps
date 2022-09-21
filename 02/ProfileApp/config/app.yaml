@@ -18,3 +18,13 @@ services:
   - path: /
   run_command: gunicorn --worker-tmp-dir /dev/shm config.wsgi
   source_dir: 02/ProfileApp
+static_sites:
+- environment_slug: html
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ElfazM/PythonWebApps
+  name: pythonwebapps-02-profile-app-sta
+  routes:
+  - path: /static
+  source_dir: 02/ProfileApp/static
