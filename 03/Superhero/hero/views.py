@@ -36,3 +36,13 @@ class BlackWidow(TemplateView):
             'body': 'My name is Natasha Romanova',
             'image': '/static/images/black_widow.jpg'
         }
+
+class DragonVView(TemplateView):
+    template_name = 'hero.html'
+
+    def get_context_data(self, **kwargs):
+        return {
+            'title': 'House of the Dragon',
+            'body': 'My name is Natasha Romanova',
+            'image': '/static/images/HouseOfDragon.jpg'
+        }

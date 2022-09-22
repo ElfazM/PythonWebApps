@@ -1,10 +1,10 @@
 from django.urls import path
-from hero.views import HulkView,IronManView
+from django.urls.conf import include
 
 urlpatterns = [
 
-    path('',        HulkView.as_view()),
-    path('Game',     IronManView.as_view()),
+    
+    path('', include('hero.urls')),
 
     
 ]
