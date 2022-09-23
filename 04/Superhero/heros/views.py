@@ -22,11 +22,16 @@ class heroDetailView(TemplateView):
 def hero_list():
     def hero_details(i, f):
         
-        if   i == 0: caption = f'Caption for Hero 1' 
-        elif i == 1: caption = f'Caption for Hero 2' 
-        elif i == 2: caption = f'Caption for Hero 3' 
-        elif i == 3: caption = f'Caption for Hero 4' 
-        elif i == 4: caption = f'Caption for Hero 5' 
+        if   i == 0: caption = f'Guy  ' 
+        elif i == 1: caption = f'Itachi Uchiha ' 
+        elif i == 2: caption = f'Jiraya the sage  ' 
+        elif i == 3: caption = f'Kakashi Sense ' 
+        elif i == 4: caption = f'Minato ' 
+        elif i == 5: caption = f'Naruto Uzamaki ' 
+        elif i == 6: caption = f'Sasuke Uchiha ' 
+
+
+
         else: None
 
         return dict(id=i, file=f, caption=caption)
