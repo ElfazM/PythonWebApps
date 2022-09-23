@@ -1,4 +1,5 @@
 from pathlib import Path
+from django.shortcuts import render
 from django.views.generic import TemplateView
 
 from .models import HeroD
@@ -19,6 +20,6 @@ class heroDetailView(TemplateView):
 
     def get_context_data(self, **kwargs):
         return {
-            'note': HeroD.objects.get(pk=kwargs['pk'])
+            'hero': HeroD.objects.get(pk=kwargs['pk'])
         }
 
