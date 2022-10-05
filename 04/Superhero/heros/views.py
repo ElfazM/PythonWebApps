@@ -25,7 +25,7 @@ def hero_list():
         
         
         if   i == 0: caption = f'Itachi Uchiha ' , 'Weakness: Terminaly Sick'
-        elif i == 1: caption = f'Jiraya the sage ' , 'Weakness: Tsunade '
+        elif i == 1: caption = f'Jiraya the sage  ' , 'Weakness: Tsunade '
         elif i == 2: caption = f'Kakashi Sense ' , 'Weakness:  cant show his face '
         elif i == 3: caption = f'Minato ' , ' Weakness: None'
         elif i == 4: caption = f'Naruto Uzamaki '  , ' Weakness: like father like son'
