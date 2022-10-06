@@ -2,7 +2,7 @@ envs:
 - key: DISABLE_COLLECTSTATIC
   scope: RUN_AND_BUILD_TIME
   value: "1"
-name: squid-app
+name: hammerhead-app
 region: nyc
 services:
 - environment_slug: python
