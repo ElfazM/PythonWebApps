@@ -1,12 +1,12 @@
 h1 {
-    color: green;
+    color: rgb(114, 114, 211);
 }
 
 .header {
     text-align: center;
 }
 
-.photo {
+.hero {
     margin: 2em;
-    border-radius: 10px;
+    border-radius: 20px;
 }
