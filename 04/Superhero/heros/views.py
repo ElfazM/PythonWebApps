@@ -2,24 +2,6 @@ from pathlib import Path
 from turtle import title
 from django.views.generic import TemplateView
 
-
-
-class heroListView(TemplateView):
-    template_name = 'heros.html'
-
-    def get_context_data(self, **kwargs):
-        return dict(heros=hero_list())
-
-
-class heroDetailView(TemplateView):
-    template_name = 'hero.html'
-
-    def get_context_data(self, **kwargs):
-        i = kwargs['id']
-        heros = hero_list()
-        p = heros[i]
-        return dict(hero=p)
-
 def hero_list():
     def hero_details(i, f):
         
@@ -37,3 +19,19 @@ def hero_list():
     heros = Path('static/images').iterdir()
     heros = [hero_details(i, f) for i, f in enumerate(heros)]
     return heros
+
+class heroListView(TemplateView):
+    template_name = 'heros.html'
+
+    def get_context_data(self, **kwargs):
+        return dict(heros=hero_list())
+
+
+class heroDetailView(TemplateView):
+    template_name = 'hero.html'
+
+    def get_context_data(self, **kwargs):
+        i = kwargs['id']
+        heros = hero_list()
+        p = heros[i]
+        return dict(hero=p)
