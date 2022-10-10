@@ -21,10 +21,10 @@
             "type": "python",
             "request": "launch",
             "program": "manage.py",
-            "cwd": "${workspaceFolder}/11/Book",
+            "cwd": "${workspaceFolder}/Superhero",
             "args": [
                 "runserver",
-                "8001"
+                
             ],
             "django": true,
             "justMyCode": true
