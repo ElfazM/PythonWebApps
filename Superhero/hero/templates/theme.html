@@ -16,6 +16,17 @@
     <header class="bg-primary p-5 mb-5">
         <h1>Hero Database</h1>
         <h2>Data Views Application</h2>
+        <a href="admin" class="btn btn-info m-2">Admin View</a>
+        
+        <p>{% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+
+        {% else %}
+        <p>Welcome, new user. Please log in.</p>
+        <a class="btn btn-info m-2" href="/accounts/login">Log In</a>
+        
+        {% endif %}</p> 
+
     </header>
 
     <div class="container m-5">
@@ -30,12 +41,7 @@
             {% endblock content %}
 
         </div>
-        <br> <br>
-        <div class="col">
 
-            <a href="/" class="btn btn-light">Home</a>
-
-        </div>
     </div>
         
 </body>
