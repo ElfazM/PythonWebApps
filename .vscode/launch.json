@@ -25,9 +25,23 @@
             "type": "python",
             "request": "launch",
             "program": "manage.py",
-            "cwd": "${workspaceFolder}/11/Book",
+            "cwd": "${workspaceFolder}/Superhero/TDD",
             "args": [
                 "test"
+            ],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Get Pages",
+            "type": "python",
+            "request": "launch",
+            "program": "manage.py",
+            "cwd": "${workspaceFolder}/Superhero/TDD",
+            "args": [
+                "pages",
+                
+                
             ],
             "django": true,
             "justMyCode": true
